@@ -1,0 +1,1080 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+
+::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #fcfafa77;
+  }
+
+
+
+body {
+    background-color: black;
+}
+
+.head {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    position:fixed;
+    z-index: 1;
+    background-color: black;
+}
+
+.Spotify-logo {
+    width: 117px;
+    height: 2px;
+}
+
+.Spotify-logo i {
+    margin-left: 28px;
+    margin-top: 30px;
+
+}
+
+.Spotify-logo i:hover {
+    cursor: pointer;
+}
+
+.head .home-logo button {
+    width: 48px;
+    height: 48px;
+    margin-left: 505px;
+    margin-top: 5px;
+    background-color: rgba(44, 44, 44, 0.721);
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    transition: transform .1s;
+}
+
+.home-logo button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.home-logo button:hover::after {
+    content: "Home";
+    position: absolute;
+    color: white;
+    margin-top: 45px;
+    background-color: rgba(44, 44, 44, 0.721);
+    font-size: 12.5px;
+    padding: 5px;
+    border-radius: 5px;
+    right: 1px;
+    opacity: 90%;
+
+
+}
+
+.search {
+    width: 490px;
+    height: 48px;
+    background-color: rgba(44, 44, 44, 0.721);
+    margin-left: 560px;
+    border-radius: 35px;
+    margin-top: 5px;
+    display: flex;
+    padding: 0 15px;
+}
+
+.search:hover {
+    cursor: pointer;
+    background-color: #2A2A2A;
+    border: 1px solid #6e6d6d;
+    transition: all linear .3s;
+}
+
+.search:hover .search-logo-box {
+    color: #fff;
+}
+
+.search .search-logo-box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: rgba(198, 195, 195, 0.818);
+}
+
+.search .search-text {
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 80px;
+    color: inherit;
+    color: white;
+}
+
+.search .search-text::placeholder {
+    color: rgba(212, 217, 217, 0.836);
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(198, 195, 195, 0.818);
+}
+
+.right-icons .pipe {
+    border-left: thin solid;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.right-icons {
+    gap: 10px;
+    color: rgba(198, 195, 195, 0.818);
+}
+
+.browse-icon {
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: rgba(44, 44, 44, 0.967);
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    left: -20px;
+}
+
+.browse-icon:hover .tooltip {
+    display: block;
+}
+
+.login {
+    width: 108px;
+    height: 48px;
+    margin-left: 1410px;
+    margin-top: -47px;
+}
+
+.login button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+    opacity: 95%;
+}
+
+.Signup {
+    width: 95px;
+    height: 48px;   
+    margin-left: 1300px;
+    margin-top: -48px;
+
+}
+
+.Signup button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: rgb(172, 171, 171);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Signup button:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.2;
+    cursor: pointer;
+} 
+
+.Spoity-main{
+    display: flex;
+}
+
+.sidebar {
+    width: 353px;
+    height: 2549px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(26, 25, 25, 0.689);
+    border-radius: 10px;
+    margin-top: 4rem;
+    margin-left: 8px;
+    position: fixed;
+}
+
+.sidebar .lib-box {
+    width: 353px;
+    height: 76px;
+}
+
+.sidebar .lib-box .lib-box2 {
+    width: 353px;
+    height: 60px;
+}
+
+.sidebar .lib-box .lib-box2 .add-box {
+    width: 32px;
+    height: 32px;
+    margin-left: 305px;
+    margin-top: 18px;
+    color: #9c9c9c;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.sidebar .lib-box .lib-box2 .add-box:hover{
+    cursor: pointer;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.sidebar .lib-box .lib-box2 .add-box:hover::after{
+    content: "Create playlist or folder";
+    position: absolute;
+    color: white;
+    /* margin-top: -40px; */
+    background-color: rgba(44, 44, 44, 0.721);
+    font-size: 13px;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+.sidebar .lib-box .lib-box2 .add-box i{
+    margin-top: 7px;
+}
+
+.sidebar .lib-box .lib-box2 .your-lib{
+    width: 142px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: -28px;
+    margin-left: 35px;
+}
+
+.sidebar .lib-box .lib-box2 .your-lib span{
+    font-size: 15px;
+    font-weight: bold;
+    color: #aeaaaa;
+    display: relative;  
+}
+
+.sidebar .lib-box .lib-box2 .your-lib span img{
+    width: 25px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: -37px;
+    float: left;
+}
+.sidebar .lib-box .lib-box2 .your-lib span:hover{
+    color: white;
+}
+.sidebar .lib-box .lib-box2 .your-lib span img{
+    color: white;
+    
+}
+
+.sidebar .lib-box .lib-box2 .your-lib:hover{
+    cursor: pointer;
+}
+
+.sidebar .lib-box .lib-box2 .your-lib::after{
+    content: "Collapse your Library";   
+    color: white;
+    position: absolute;
+    margin-top: 30px;
+    background-color: rgb(38, 37, 37);
+    border-radius: 5px;
+    margin-left: -35px;
+    font-size: 13.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+}
+.sidebar .lib-box .lib-box2 .your-lib:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.25s;                                                                                                                         
+}
+
+.sidebar-2{
+    width: 353px;
+    height: 253px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.sidebar-2::-webkit-scrollbar{
+    background-color: transparent;
+    width: 13px;
+}
+
+.sidebar-2::-webkit-scrollbar-thumb{
+    background-color:transparent;
+    width: 13px;
+}
+.sidebar-2:hover::-webkit-scrollbar-thumb{
+    background-color:rgba(230, 228, 228, 0.41);
+    width: 5px;
+}
+
+.first-playlist{
+        width: 337px;
+        height: 134px;
+        background-color:#222222;
+        border-radius: 15px;
+        margin-bottom: 23px;
+        margin-left: 8px;
+        display: flex;
+
+    }
+.first-playlist .text {
+    height: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 14px;
+    margin-left: 20px;
+
+}
+
+.text-1{
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.text-2{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.first-playlist button{
+    font-size: 13px;
+    font-weight: 610;
+    padding: 7px 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+}
+.first-playlist button:hover{
+    transform: scale(1.05);
+    opacity: 90%;
+}
+
+ .privacy{
+    width: 353px;
+    height: 211px;
+    padding: 0 10px;
+    margin-top: 30px;
+    margin-left: 0.5rem;
+} 
+.privacy ul li a{
+    text-decoration: none;
+    color: rgb(168, 167, 167);
+    font-size: 10.5px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.privacy ul li a:hover{
+    text-decoration: underline;
+}
+
+.privacy ul{
+    list-style-type: none;
+}
+
+.privacy ul li{
+    padding-bottom: 8px;
+}
+
+.cookies{
+    color: white !important;
+    font-size: 11px !important;
+}
+
+.lang{
+    width: 353px;
+    height: 32px;
+}
+.lang button{
+    width: 92px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 0.3rem;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: #aeaaaa;
+}
+
+.main{
+    width: 72.5rem;
+    background: linear-gradient(180deg, rgba(42,42,42,0.8716736694677871) 0%, rgb(16, 15, 15) 25%);
+    height: auto;
+    padding: 20px;
+    margin-top: 4rem;
+    color: white;
+    margin-left: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 23rem;
+    
+} 
+
+/* ----------------------------Artists section-------------------- */
+
+.popular-artists-box{
+    width: 1150px;
+    height: 60px;
+    margin-top: 0.9rem;
+    display:block;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.popular-artists-box .showall{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 55.5rem;
+    font-weight: 600;
+}
+
+
+.popular-artists-box .showall:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pop-artists{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.pop-artists:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.circle-cards{
+    margin-top: 3.2rem;
+    width: 184px;
+    height: 238px;
+    display: flex;
+    position: relative;
+    padding: 5px 5px;
+    
+}
+
+.circle-cards:hover{
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.095) 20%, rgba(35, 34, 34, 0.967) 69%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.circle-cards img{
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+
+.circle-cards span{
+    position: absolute;
+    margin-top: 9.5rem;
+    font-size: 15px;
+}
+
+.circle-cards p{
+    position: absolute;
+    margin-top: 11.2rem;
+    font-size: 13px;
+    color: #bcb8b8;
+}
+.play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #00d15a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-top: 6.5rem;
+    margin-left: -3.8rem;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+.triangle {
+    /* width: 1.7rem; */
+    /* height: 1.5rem; */
+    margin-left: 5px;
+    border-left: 16px solid black; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.circle-cards:hover .play-button, .cards:hover .play-button, .f-cards:hover .play-button{
+    opacity: 100%;
+    transform: translateY(-10px);
+}
+
+.artist-section, .album-section, .radio-section,.featured-section,.spotify-playlists-section{
+    display: flex;
+    width: 100%;
+}
+
+/* -------------------Album Section---------------------- */
+
+.album-section{
+    margin-top: 1rem;
+}
+
+.popular-album-box{
+    width: 1150px;
+    height: auto;
+    margin-top: 0.7rem;
+    display:block;
+    position: absolute;
+    margin-left: 5px;
+    /* margin-top: 21rem; */
+
+}
+
+.popular-album-box .showall{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 54.5rem;
+    font-weight: 600;
+
+}
+
+.popular-album-box .showall:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.popular-album-box .pop-album{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.pop-album:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cards{
+    margin-top: 3.2rem;
+    width: 184px;
+    height: 238px;
+    display: flex;
+    /* position: absolute; */
+    padding: 5px 5px;
+    /* margin-top: 22.5rem; */
+    
+}
+
+.cards:hover{
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.095) 20%, rgba(35, 34, 34, 0.967) 69%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cards img{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.artists-name{
+    position: absolute;
+    color: white ; 
+    margin-top: 9.5rem;
+    font-size: 15px;
+}
+
+.cards p{
+    position: absolute;
+    margin-top: 11.2rem;
+    font-size: 13px;
+    color: #bcb8b8;
+}
+
+.cards .play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #00d15a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-top: 6.5rem;
+    margin-left: -3.5rem;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+.cards .triangle {
+    /* width: 1.7rem; */
+    /* height: 1.5rem; */
+    margin-left: 5px;
+    border-left: 16px solid black; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/* ------------------------Radio Section------------------- */
+
+.radio-section{
+    margin-top: 2.5rem;
+}
+
+.popular-radio-box{
+    width: 1150px;
+    height: auto;
+    margin-top: 0.7rem;
+    margin-left: 5px;
+    display:block;
+    position: absolute;
+    /* margin-top: 21rem; */
+
+}
+
+.popular-radio-box .showall{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 56rem;
+    font-weight: 600;
+
+}
+
+.popular-radio-box .showall:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pop-radio{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.pop-radio:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cards{
+    margin-top: 3.2rem;
+    width: 184px;
+    height: 238px;
+    display: flex;
+    /* position: absolute; */
+    padding: 5px 5px;
+    /* margin-top: 22.5rem; */
+    
+}
+
+.cards:hover{
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.095) 20%, rgba(35, 34, 34, 0.967) 69%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cards img{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.remaining-span{
+   position: absolute;
+    margin-top: 9.5rem;
+    font-size: 13px;
+    color: #bcb8b8;
+}
+
+.cards .play-button {   
+    width: 50px;
+    height: 50px;
+    background-color: #00d15a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-top: 6.5rem;
+    margin-left: -3.5rem;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+.cards .triangle {
+    /* width: 1.7rem; */
+    /* height: 1.5rem; */
+    margin-left: 5px;
+    border-left: 16px solid black; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+
+/* ------------------------Feature charts Section------------------- */
+
+
+.featured-chart-box{
+    width: 1150px;
+    height: auto;
+    margin-top: 0.7rem;
+    margin-left: 5px;
+    display:block;
+    position: absolute;
+    /* margin-top: 21rem; */
+
+}
+
+.featured-chart{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.featured-chart:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.f-cards{
+    margin-top: 3.2rem;
+    width: 160px;
+    height: 238px;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    padding: 5px 5px;
+    /* margin-top: 22.5rem; */
+    
+}
+
+.f-cards:hover{
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.095) 20%, rgba(35, 34, 34, 0.967) 69%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.f-cards img{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.remaining-span1{
+    position: absolute;
+    margin-top: 9.5rem;
+    font-size: 13px;
+    color:#bcb8b8;
+}
+
+.f-cards .play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #00d15a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-top: 6.5rem;
+    margin-left: -3.5rem;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+.f-cards .triangle {
+    /* width: 1.7rem; */
+    /* height: 1.5rem; */
+    margin-left: 5px;
+    border-left: 16px solid black; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/* ---------------------------Spotify Playlists CSS here------------------- */
+
+.spotify-playlists-box{
+    width: 1150px;
+    height: auto;
+    margin-top: 0.7rem;
+    margin-left: 5px;
+    display:block;
+    position: absolute;
+    /* margin-top: 21rem; */
+
+}
+
+.spotify-playlists-box .showall{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 54.5rem;
+    font-weight: 600;
+
+}
+
+.spotify-playlists-box .showall:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.spotify-playlists-box .spotify-playlists{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.spotify-playlists:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cards{
+    margin-top: 3.2rem;
+    width: 184px;
+    height: 238px;
+    display: flex;
+    /* position: absolute; */
+    padding: 5px 5px;
+    /* margin-top: 22.5rem; */
+    
+}
+
+.cards:hover{
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.095) 20%, rgba(35, 34, 34, 0.967) 69%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cards img{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+}
+.remaining-span{
+    position: absolute;
+    margin-top: 9.5rem;
+    font-size: 13px;
+    color: #bcb8b8;
+}
+
+.cards .play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #00d15a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-top: 6.5rem;
+    margin-left: -3.5rem;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+.cards .triangle {
+    /* width: 1.7rem; */
+    /* height: 1.5rem; */
+    margin-left: 5px;
+    border-left: 16px solid black; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/* ----------------------Footer Section CSS------------------ */
+
+.footer{
+    width:100%;
+    margin-top: 2rem;   
+    height: auto;
+    display:flex;    
+
+}
+
+.footer-items{
+    padding: 8px 16px 40px ;
+    display: flex;
+    position: relative;
+    gap: 6rem;
+
+}
+
+
+.hightlight-items{
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+
+.footer li{
+    padding: 3px 0px;
+}
+
+.footer li a{
+    color: #fffefeb9;
+    font-size: 14.5px;
+    text-decoration: none;
+}
+
+.footer li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-icons-box{
+    width: 152px;
+    height: 206px;
+    display: flex;
+    margin-left: 6rem;
+    gap: 10px;
+   
+}
+
+.footer-icon{
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(37, 36, 36);
+    
+}
+
+.footer-icon i{
+    padding: 14px 14px;
+}
+
+.horizontal-row{
+    border: 0.1px solid #242424;
+}
+
+.copyright{
+    margin-top: 2rem;
+    padding: 20px 0px 0px 0px;
+    font-size: 14px;
+    color: #c4c2c2;
+    margin-bottom: 10rem;
+}
+
+/* ------------------Preview in footer------------ */
+
+.preview{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.text h5{
+font-weight: 600;
+margin-top: 5px;
+font-size: 14px;
+padding-left: 15px;
+
+}
+
+.text h5 p{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.button button{
+    width: 178px;
+    height: 48px;
+    border: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 42rem;
+}
+
+.button button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+
+
